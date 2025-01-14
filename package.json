@@ -1,0 +1,24 @@
+{
+  "name": "wp-react",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "env:start": "wp-env start",
+    "env:stop": "wp-env stop",
+    "app:build": "wp-scripts build src/main --output-path=wp/themes/app/build/",
+    "app:start": "wp-scripts start src/main --output-path=wp/themes/app/build/"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.6",
+    "@types/react-dom": "^19.0.3"
+  },
+  "dependencies": {
+    "@wordpress/api-fetch": "^7.15.1",
+    "@wordpress/dom-ready": "^4.15.0",
+    "@wordpress/env": "^10.15.0",
+    "@wordpress/scripts": "^30.8.1"
+  }
+}
