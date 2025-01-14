@@ -19,6 +19,7 @@
     "@wordpress/api-fetch": "^7.15.1",
     "@wordpress/dom-ready": "^4.15.0",
     "@wordpress/env": "^10.15.0",
-    "@wordpress/scripts": "^30.8.1"
+    "@wordpress/scripts": "^30.8.1",
+    "react-owl-carousel": "^2.3.3"
   }
 }
