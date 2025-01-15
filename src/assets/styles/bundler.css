@@ -1,0 +1,11 @@
+@import './fonts.css';
+@import './settings.css';
+
+@import './landing/Header.css';
+@import './landing/sections/Hero.css';
+@import './landing/sections/TariffList.css';
+@import './landing/Footer.css';
+
+@import './ui/Button.css';
+@import './ui/CheckBox.css';
+@import './ui/Loader.css';

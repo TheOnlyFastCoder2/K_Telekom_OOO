@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 2%;
+  line-height: 150%;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* X-Small	None	< 576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px */
+
+&:root {
+  --rose-red: 198, 16, 89;     
+  --ocean-blue: 0, 153, 200;   
+  --charcoal-gray: 45, 45, 45;
+  --light-gray: 242, 246, 248;   
+  --pure-white: 255, 255, 255;
+  --dark-gray: 85, 85, 85;
+  --dark-black: 0, 0, 0;
+  --px: clamp(10px, -0.5515rem + 5.8824vw, 50px);
+}
+
+body {
+  background: rgb(var(--light-gray), 0.6);
+}
+
+#root {
+  min-width: 320px;
+  width: min(100%, 1000px);
+  margin: 0 auto;
+  min-height:100%;
+  background: rgb(var(--pure-white));
+}
+
+.Header, section, .Footer {
+  padding-left: var(--px);
+  padding-right: var(--px);
+}
+
+h1 {
+  font-size: clamp(25px, 1.1213rem + 2.2059vw, 40px);
+  /* line-height: clamp(37.5px, -1.3051rem + 8.0882vw,60px); */
+}
+
+h2 {
+  font-size: clamp(20px, 0.9559rem + 1.4706vw, 30px);
+  /* line-height: clamp(30px, 1.4338rem + 2.2059vw, 45px); */
+}
+
+h3 {
+  font-size: clamp(18px, 0.8309rem + 1.4706vw, 28px);
+  /* line-height: clamp(27px, 1.2463rem + 2.2059vw, 42px); */
+
+  &.__small {
+    font-size: clamp(18px, 0.9191rem + 1.0294vw, 25px);
+    /* line-height: 150%; */
+  }
+}
+
+h4 {
+  font-size: clamp(16px, 0.8824rem + 0.5882vw, 20px);
+  /* line-height: clamp(24px, 1.3235rem + 0.8824vw, 30px); */
+}
+
+h5 {
+  font-size: clamp(14px, 0.8162rem + 0.2941vw, 16px);
+  /* line-height: clamp(21px, 1.2243rem + 0.4412vw, 24px); */
+}
+
+button, h6 {
+  font-size: clamp(12px, 0.6912rem + 0.2941vw, 14px);
+  /* line-height: clamp(18px, 1.0368rem + 0.4412vw, 21px); */
+}
+
+li {
+  font-size: clamp(13px, 0.7243rem + 0.4412vw, 16px);
+  /* line-height: clamp(26px, 1.4485rem + 0.8824vw, 32px); */
+}
+
+p {
+  font-size: clamp(12px, 0.7206rem + 0.1471vw, 13px);
+  /* line-height: clamp(18px, 1.0809rem + 0.2206vw, 19.5px); */
+}
+
+small {
+  font-size: clamp(10px, 0.5662rem + 0.2941vw, 12px);
+  /* line-height: clamp(15px, 0.8493rem + 0.4412vw, 18px); */
+}

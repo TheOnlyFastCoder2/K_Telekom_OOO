@@ -1,0 +1,110 @@
+.TariffList {
+
+  .TariffList__title {
+    margin-bottom: 33px;
+    margin-top: 52px;
+    font-weight: 500;
+  }
+
+  .Tariff {
+    padding: 30px;
+    background: rgb(var(--pure-white));
+    box-shadow: 0 12px 25px rgb(90, 90, 90, 0.12);
+
+    .Tariff__details {
+      margin-bottom: 19px;
+
+      .Tariff__name {
+        color: var(--dark-black);
+        font-weight: 500;
+      }
+
+      .Tariff__internet-speed {
+        .Tariff__speed-title {
+          color: #ACACAC;
+          font-weight: 400;
+        }
+        .Tariff__speed-value {
+          color: rgb(var(--rose-red));
+          margin: 5px 0;
+          font-weight: 500;
+        }
+        .Tariff__description {
+          max-width: 287px;
+          text-wrap: pretty;
+          color: rgb(var(--dark-gray));
+        }
+      }
+
+      .Tariff__checkbox {
+        margin-top: 24px;
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 14px;
+      }
+
+      .Tariff__price {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .Tariff__price-value {
+          color: rgb(var(--dark-black))
+        }
+        .Tariff__price-period {
+          color: #ACACAC;
+          font-weight: 400;
+        }
+      }
+
+      .Tariff__note {
+        color: #ACACAC;
+        text-wrap: balance;
+      }      
+    }
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(var(--light-gray));
+    color: rgb(var(--rose-red));
+    box-shadow: 0 0 2px rgb(0, 0, 0, 0.3);
+   
+
+    &::after {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+
+  .swiper-button-prev, .swiper-button-next, 
+  .swiper-pagination-bullet {
+    transition: transform 0.5s ease;
+    &:hover , &:focus-visible {
+      transform: scale(1.2);
+    }
+  }
+
+  .swiper-pagination-bullet {
+    background-color: rgb(var(--dark-gray), 0.2);
+    &.swiper-pagination-bullet-active {
+      background-color: rgb(var(--dark-gray));
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .Tariff {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      button, .Tariff__details {
+        width: 300px;
+      }
+    }
+  }
+}
