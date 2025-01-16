@@ -6,10 +6,8 @@
   "author": "",
   "main": "index.js",
   "scripts": {
-    "env:start": "wp-env start",
-    "env:stop": "wp-env stop",
-    "app:build": "wp-scripts build src/main --output-path=wp/themes/app/build/",
-    "app:start": "wp-scripts start src/main --output-path=wp/themes/app/build/"
+    "app:build": "wp-scripts build src/main --output-path=docker-wordpress/WordPress/wp-content/themes/app/build/",
+    "app:start": "wp-scripts start src/main --output-path=docker-wordpress/WordPress/wp-content/themes/app/build/"
   },
   "devDependencies": {
     "@types/react": "^19.0.6",
@@ -19,7 +17,6 @@
   "dependencies": {
     "@wordpress/api-fetch": "^7.15.1",
     "@wordpress/dom-ready": "^4.15.0",
-    "@wordpress/env": "^10.15.0",
     "@wordpress/scripts": "^30.8.1",
     "react-slick": "^0.30.3",
     "swiper": "^11.2.1"

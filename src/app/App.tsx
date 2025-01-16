@@ -24,11 +24,13 @@ export default function App () {
 
   useEffect(() => {
     startTransition( async () => {
+      const pages = await apiFetch({ path: '/wp/v2/pages' });
+      console.log(pages)
       const [respPage] = await apiFetch<ApiFetchPage<IACF>>({ path: "/wp/v2/pages?slug=home" });
       const respMediaLogo = await apiFetch<ApiFetchMedia>({ path: `/wp/v2/media/${respPage.acf.logo}` })
       const respMedia = await apiFetch<ApiFetchMedia>({ path: `/wp/v2/media/${respPage.acf.hero.image}` })
       const respTariffList =  await apiFetch<ApiFetchPost<IPost>>({ path: `/wp/v2/posts?categories=2` });
-      
+
       const imagePromises = [
         new Promise((resolve) => {
           const img = new Image();
