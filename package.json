@@ -6,6 +6,7 @@
   "author": "",
   "main": "index.js",
   "scripts": {
+    "docker:run": "docker-compose -f ./docker-wordpress/docker-compose.yml up -d",
     "app:build": "wp-scripts build src/main --output-path=docker-wordpress/WordPress/wp-content/themes/app/build/",
     "app:start": "wp-scripts start src/main --output-path=docker-wordpress/WordPress/wp-content/themes/app/build/"
   },
@@ -18,7 +19,6 @@
     "@wordpress/api-fetch": "^7.15.1",
     "@wordpress/dom-ready": "^4.15.0",
     "@wordpress/scripts": "^30.8.1",
-    "react-slick": "^0.30.3",
     "swiper": "^11.2.1"
   }
 }

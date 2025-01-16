@@ -9,6 +9,7 @@ services:
       MYSQL_DATABASE: wordpress
     volumes:
       - 'mysql:/var/lib/mysql'
+      - './initdb.d:/docker-entrypoint-initdb.d'
   wordpress:
     depends_on:
       - mysql
